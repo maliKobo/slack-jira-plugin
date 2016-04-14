@@ -34,7 +34,11 @@ var config = {
   verbose: true,
   emoji: ":jira:", // be sure to upload your custom emoji in slack
   link_separator: ", ",// use \n if you want new lines
-  error_channel: '' //the id of the channel to send low level log errors.  If not defined, will use the current channel
+  error_channel: '', //the id of the channel to send low level log errors.  If not defined, will use the current channel
+  
+  baseurl: "",
+  username: '',
+  password: ''
 };
 
 //DO NOT EDIT BELOW HERE
