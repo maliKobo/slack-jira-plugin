@@ -20,6 +20,3 @@ node_modules
 config.js
 config-jira.js
 
-*.swp
-
-config-example.js
