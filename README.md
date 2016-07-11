@@ -1,5 +1,7 @@
 # Slack JIRA Plugin
 
+### This fork is not actively maintained any more. Please use https://github.com/rakutenjeff/slack-jira-plugin instead.
+
 JIRA integration with [slack](http://slack.com).  
 
 It does the following:
