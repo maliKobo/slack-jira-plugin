@@ -6,7 +6,7 @@ var config = {
   issueDetailsToShow: {'fields.summary':1 , 'fields.assignee' : 1, 'fields.description': 0},
   showDetailsByDefault: true,//if true, you don't need the '+' to get details
   bot_name: "JIRA",//Provide the name to post under
-  token: '', // https://api.slack.com/web
+  token: process.env.JIRABOT_TOKEN, // https://api.slack.com/web
   jira_urls: {
     // DEFAULT NODE IS REQUIRED.
     "DEFAULT": {url: "https://feedback.kobobooks.com/browse/"}
@@ -14,7 +14,7 @@ var config = {
   search_cmd: "search",
   //Since search results can be verbose, you may not want to muddy the channel
   search_output_chan: "this",//if the value is "this", then the current channel will be used, else the name of a channel
-  projects: ["REPLACE", "ME", "WITH", "YOUR", "PROJECT", "NAMES", "ADRD"],
+  projects: process.env.JIRABOT_JIRA_PROJECTS,
   post: false,
   verbose: true,
   emoji: ":koby:", // be sure to upload your custom emoji in slack
@@ -22,8 +22,8 @@ var config = {
   error_channel: '', //the id of the channel to send low level log errors.  If not defined, will use the current channel
   
   baseurl: "https://feedback.kobobooks.com/",
-  username: '',
-  password: ''
+  username: process.env.JIRABOT_JIRA_USERNAME,
+  password: process.env.JIRABOT_JIRA_PWD
 };
 
 //DO NOT EDIT BELOW HERE
